@@ -16,6 +16,11 @@ public class AdapterRecipe extends RecyclerView.Adapter<AdapterRecipe.ViewHolder
     private Context mContext;
     private List<Filmes> lstFilmes;
 
+    public AdapterRecipe(Context mContext, List<Filmes> lstFilmes) {
+        this.mContext = mContext;
+        this.lstFilmes = lstFilmes;
+    }
+
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
