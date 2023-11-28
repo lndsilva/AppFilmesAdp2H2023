@@ -9,6 +9,7 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_margin="10dp"
+        android:contentDescription="@string/imagem_filmes"
         android:scaleType="centerCrop"
         android:src="@drawable/jogos_vorazes" />
 
@@ -23,7 +24,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:layout_gravity="center_vertical"
-            android:text="Jogos Vorazes"
+            android:text="@string/jogos_vorazes"
             android:textAllCaps="true"
             android:textColor="@color/black"
             android:textStyle="bold" />
@@ -42,7 +43,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
+            android:contentDescription="@string/imagem_filmes"
             android:src="@drawable/baseline_more_horiz" />
     </LinearLayout>
 
