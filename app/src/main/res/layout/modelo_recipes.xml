@@ -12,23 +12,38 @@
         android:scaleType="centerCrop"
         android:src="@drawable/jogos_vorazes" />
 
-    <TextView
-        android:id="@+id/txtModeloRecipe"
+    <RelativeLayout
+        android:id="@+id/idImagemLayout"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical"
-        android:text="Jogos Vorazes"
-        android:textAllCaps="true"
-        android:textColor="@color/black"
-        android:textStyle="bold" />
+        android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/imgModeloRecipeBaseline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical"
-        android:layout_marginLeft="150dp"
-        android:src="@drawable/baseline_more_horiz" />
+        <TextView
+            android:id="@+id/txtModeloRecipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:text="Jogos Vorazes"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
 
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgModeloRecipeBaseline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/baseline_more_horiz" />
+    </LinearLayout>
 
 </LinearLayout>
