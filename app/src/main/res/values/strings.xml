@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyApp</string>
+    <string name="imagem_filmes">imagem-filmes</string>
+    <string name="jogos_vorazes">Jogos Vorazes</string>
+</resources>
