@@ -1,6 +1,7 @@
 package br.com.etecia.myapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -37,6 +38,7 @@ public class RecipesActivity extends AppCompatActivity {
         AdapterRecipe adapterRecipe = new AdapterRecipe(getApplicationContext(), listaFilmesRecipes);
 
         idRecyclerViewRecipes.setLayoutManager(new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, true));
+        idRecyclerViewRecipes.addItemDecoration(new DividerItemDecoration(getApplicationContext(), LinearLayoutManager.VERTICAL));
 
         idRecyclerViewRecipes.setHasFixedSize(true);
 
